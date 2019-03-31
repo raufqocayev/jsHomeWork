@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="info">
+                <h4 class="text-white text-center mb-5">Form Submit</h4>
+            </div>
+            <div class="SubmitDiv">
+                <form name="myForm">
+                    <h5>Name</h5>
+                    <input type="text" name="fname" placeholder="Name" class="whiteInput" pattern="[A-Z][a-z]">
+                    <h5>Surname</h5>
+                    <input type="text" name="fsurname" placeholder="Surname" class="whiteInput">
+                    <h5>Age</h5>
+                    <input type="text" name="fage" placeholder="Age" class="whiteInput">
+                    <h5>Email</h5>
+                    <input type="text" name="femail" placeholder="Email" class="whiteInput"
+                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
+                    <h5>Password ID number</h5>
+                    <input type="text" name="fid" placeholder="ID" class="whiteInput">
+                    <button type="submit" onclick="getValue(); return validateForm()"
+                        class="btn my-3  btn-outline-success submit">SUBMIT</button>
+                </form>
+            </div>
+            <div class="delete">
+                <h3 class="text-white">Delete Person with his number</h3>
+                <input type="text" class="my-3" placeholder="NUMBER" id="deleted">
+                <button type="button" class="btn btn-info" onclick="deleteEl()">DELETE</button>
+            </div>
+            <div class="sort">
+                <h3 class="text-white">Sort the list</h3>
+                <button type="button" class="btn btn-success" onclick="sortName()">by Name</button>
+                <button type="button" class="btn btn-success" onclick="sortSurn()">by Surname</button>
+            </div>
+            <div id="Peoplehere"></div>
+        </div>
+    </div>
+
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

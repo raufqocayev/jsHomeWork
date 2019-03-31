@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    background-color: rgb(69, 25, 255) !important;
+}
+.info{
+    width:100%;
+}
+.SubmitDiv h5{
+    color: yellow;
+}
+.SubmitDiv{
+    width: 50%;
+}
+.SubmitDiv .whiteInput{
+    border-radius: 12px;
+    border:1px solid green;
+    width: 100%;
+    height: 2.5rem;
+    padding-left: 10px;
+    color: blue;
+    font-size: 20px;
+}
+.SubmitDiv .whiteInput::placeholder{
+    color: rgba(85, 68, 155, 0.651)
+}
+.SubmitDiv .whiteInput:focus{
+    border: 2px solid red;
+    outline: none;
+}
+.SubmitDiv .submit{
+    color: black;
+}
+#Peoplehere{
+    width: 100%;
+}
+.delete{
+    width: 100%;
+}
+.sort{
+    clear: both;
+    width: 100%;
+}
